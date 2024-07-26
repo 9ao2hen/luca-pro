@@ -1,0 +1,3 @@
+cn.mervyn.luca.framework.datasource.config.LucaDataSourceAutoConfiguration
+cn.mervyn.luca.framework.mybatis.config.LucaMybatisAutoConfiguration
+cn.mervyn.luca.framework.translate.config.LucaTranslateAutoConfiguration

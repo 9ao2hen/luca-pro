@@ -1,0 +1,6 @@
+cn.mervyn.luca.framework.apilog.config.LucaApiLogAutoConfiguration
+cn.mervyn.luca.framework.jackson.config.LucaJacksonAutoConfiguration
+cn.mervyn.luca.framework.swagger.config.LucaSwaggerAutoConfiguration
+cn.mervyn.luca.framework.web.config.LucaWebAutoConfiguration
+cn.mervyn.luca.framework.xss.config.LucaXssAutoConfiguration
+cn.mervyn.luca.framework.banner.config.LucaBannerAutoConfiguration

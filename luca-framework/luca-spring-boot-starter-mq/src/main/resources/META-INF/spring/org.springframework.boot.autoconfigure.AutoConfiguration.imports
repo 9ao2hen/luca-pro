@@ -1,0 +1,3 @@
+cn.mervyn.luca.framework.mq.redis.config.LucaRedisMQProducerAutoConfiguration
+cn.mervyn.luca.framework.mq.redis.config.LucaRedisMQConsumerAutoConfiguration
+cn.mervyn.luca.framework.mq.rabbitmq.config.LucaRabbitMQAutoConfiguration

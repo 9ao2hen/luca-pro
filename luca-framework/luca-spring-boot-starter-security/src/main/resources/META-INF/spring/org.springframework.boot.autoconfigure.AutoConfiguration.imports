@@ -1,0 +1,3 @@
+cn.mervyn.luca.framework.security.config.LucaSecurityAutoConfiguration
+cn.mervyn.luca.framework.security.config.LucaWebSecurityConfigurerAdapter
+cn.mervyn.luca.framework.operatelog.config.LucaOperateLogConfiguration

@@ -1,0 +1,2 @@
+cn.mervyn.luca.framework.quartz.config.LucaQuartzAutoConfiguration
+cn.mervyn.luca.framework.quartz.config.LucaAsyncAutoConfiguration

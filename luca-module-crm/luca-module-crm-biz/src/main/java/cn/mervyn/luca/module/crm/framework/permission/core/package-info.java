@@ -1,0 +1,1 @@
+package cn.mervyn.luca.module.crm.framework.permission.core;

@@ -1,0 +1,2 @@
+cn.mervyn.luca.framework.redis.config.LucaRedisAutoConfiguration
+cn.mervyn.luca.framework.redis.config.LucaCacheAutoConfiguration
