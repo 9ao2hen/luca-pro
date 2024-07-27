@@ -23,7 +23,7 @@
         <module>luca-module-mp</module>
         <module>luca-module-crm</module>
         <module>luca-module-erp</module>
-        <module>luca-module-ai</module>
+<!--        <module>luca-module-ai</module>-->
     </modules>
 
     <name>${project.artifactId}</name>
