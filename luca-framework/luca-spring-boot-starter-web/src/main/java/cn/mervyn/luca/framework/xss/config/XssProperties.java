@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Xss 配置属性
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @ConfigurationProperties(prefix = "luca.xss")
 @Validated

@@ -5,7 +5,7 @@ import cn.mervyn.luca.module.infra.api.logger.dto.ApiAccessLogCreateReqDTO;
 /**
  * API 访问日志 Framework Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface ApiAccessLogFrameworkService {
 

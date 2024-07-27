@@ -15,7 +15,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * BPM 流程分类 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface BpmCategoryService {
 

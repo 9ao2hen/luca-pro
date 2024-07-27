@@ -25,7 +25,7 @@ import static cn.mervyn.luca.framework.pay.core.client.impl.alipay.AlipayPayClie
  *
  * 文档：<a href="https://opendocs.alipay.com/open/194/105072">当面付</a>
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class AlipayBarPayClient extends AbstractAlipayPayClient {

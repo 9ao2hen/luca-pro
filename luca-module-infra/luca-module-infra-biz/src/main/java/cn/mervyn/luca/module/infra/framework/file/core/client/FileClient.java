@@ -5,7 +5,7 @@ import cn.mervyn.luca.module.infra.framework.file.core.client.s3.FilePresignedUr
 /**
  * 文件客户端
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface FileClient {
 

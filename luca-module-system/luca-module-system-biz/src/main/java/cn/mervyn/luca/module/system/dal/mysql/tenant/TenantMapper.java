@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 租户 Mapper
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface TenantMapper extends BaseMapperX<TenantDO> {

@@ -15,7 +15,7 @@ import static cn.mervyn.luca.framework.common.exception.enums.GlobalErrorCodeCon
 /**
  * 演示 Filter，禁止用户发起写操作，避免影响测试数据
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class DemoFilter extends OncePerRequestFilter {
 

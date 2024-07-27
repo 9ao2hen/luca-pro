@@ -13,7 +13,7 @@ import java.net.URLEncoder;
 /**
  * 文件类型 Utils
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class FileTypeUtils {
 

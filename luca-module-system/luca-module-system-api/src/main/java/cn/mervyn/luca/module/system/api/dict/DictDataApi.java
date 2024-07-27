@@ -12,7 +12,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * 字典数据 API 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface DictDataApi {
 

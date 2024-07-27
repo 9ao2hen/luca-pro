@@ -19,7 +19,7 @@ import static cn.mervyn.luca.module.system.dal.redis.RedisKeyConstants.OAUTH2_AC
 /**
  * {@link OAuth2AccessTokenDO} 的 RedisDAO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Repository
 public class OAuth2AccessTokenRedisDAO {

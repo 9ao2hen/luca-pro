@@ -32,7 +32,7 @@ import static cn.mervyn.luca.framework.common.util.collection.MapUtils.findAndTh
 /**
  * 秒杀活动 Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface SeckillActivityConvert {

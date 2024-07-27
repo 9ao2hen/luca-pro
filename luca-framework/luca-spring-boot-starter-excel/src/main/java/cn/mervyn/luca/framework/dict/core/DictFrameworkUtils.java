@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 字典工具类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class DictFrameworkUtils {

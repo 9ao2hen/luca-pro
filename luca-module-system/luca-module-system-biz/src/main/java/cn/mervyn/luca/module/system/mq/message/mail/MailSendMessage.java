@@ -8,7 +8,7 @@ import jakarta.validation.constraints.NotNull;
 /**
  * 邮箱发送消息
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Data
 public class MailSendMessage {

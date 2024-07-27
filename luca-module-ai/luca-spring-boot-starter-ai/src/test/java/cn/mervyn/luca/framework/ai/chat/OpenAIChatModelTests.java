@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * {@link XingHuoChatModel} 集成测试
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class OpenAIChatModelTests {
 

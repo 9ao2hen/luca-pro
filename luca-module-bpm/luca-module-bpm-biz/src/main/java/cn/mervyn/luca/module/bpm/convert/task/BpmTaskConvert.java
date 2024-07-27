@@ -31,7 +31,7 @@ import static cn.mervyn.luca.framework.common.util.collection.MapUtils.findAndTh
 /**
  * Bpm 任务 Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface BpmTaskConvert {

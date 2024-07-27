@@ -15,7 +15,7 @@ import org.springframework.ai.zhipuai.ZhiPuAiChatOptions;
 /**
  * Spring AI 工具类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class AiUtils {
 

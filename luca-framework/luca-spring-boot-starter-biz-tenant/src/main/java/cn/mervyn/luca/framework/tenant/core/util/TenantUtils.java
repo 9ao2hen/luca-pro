@@ -10,7 +10,7 @@ import static cn.mervyn.luca.framework.web.core.util.WebFrameworkUtils.HEADER_TE
 /**
  * 多租户 Util
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class TenantUtils {
 

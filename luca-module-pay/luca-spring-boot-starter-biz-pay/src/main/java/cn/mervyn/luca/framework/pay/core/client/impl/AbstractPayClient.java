@@ -23,7 +23,7 @@ import static cn.mervyn.luca.framework.common.util.json.JsonUtils.toJsonString;
 /**
  * 支付客户端的抽象类，提供模板方法，减少子类的冗余代码
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public abstract class AbstractPayClient<Config extends PayClientConfig> implements PayClient {

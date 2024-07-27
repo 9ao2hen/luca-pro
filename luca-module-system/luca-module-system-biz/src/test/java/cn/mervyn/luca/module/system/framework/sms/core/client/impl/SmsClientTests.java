@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 各种 {@link SmsClientTests  集成测试
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class SmsClientTests {
 

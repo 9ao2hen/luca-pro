@@ -17,7 +17,7 @@ import static cn.mervyn.luca.module.system.enums.ErrorCodeConstants.NOTICE_NOT_F
 /**
  * 通知公告 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 public class NoticeServiceImpl implements NoticeService {

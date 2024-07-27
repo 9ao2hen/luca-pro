@@ -40,12 +40,12 @@ spring:
       primary: master
       datasource:
         master:
-          url: jdbc:mysql://127.0.0.1:3306/ry-vue-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          url: jdbc:mysql://127.0.0.1:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
           username: root
           password: 123456
         slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
           lazy: true # 开启懒加载，保证启动速度
-          url: jdbc:mysql://127.0.0.1:3306/ry-vue-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          url: jdbc:mysql://127.0.0.1:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
           username: root
           password: 123456
 
@@ -151,8 +151,8 @@ wx: # 参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-sta
       key-prefix: wx # Redis Key 的前缀
       http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
   miniapp: # 小程序配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/README.md 文档
-    appid:
-    secret:
+    appid: wx2c60e65ffc6d963f
+    secret: 267a421fbe024af37e2b47344348e8db
     config-storage:
       type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
       key-prefix: wa # Redis Key 的前缀
@@ -165,8 +165,8 @@ luca:
   captcha:
     enable: false # 本地环境，暂时关闭图片验证码，方便登录等接口的测试；
   pay:
-    order-notify-url:  # 支付渠道的【支付】回调地址
-    refund-notify-url:  # 支付渠道的【退款】回调地址
+    order-notify-url: http://www.mervyn.cn/admin-api/pay/notify/order # 支付渠道的【支付】回调地址
+    refund-notify-url: http://www.mervyn.cn/admin-api/pay/notify/refund # 支付渠道的【退款】回调地址
   demo: false # 开启演示模式
   tencent-lbs-key:  # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
 

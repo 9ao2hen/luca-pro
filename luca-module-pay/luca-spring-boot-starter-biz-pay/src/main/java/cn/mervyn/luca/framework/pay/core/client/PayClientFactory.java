@@ -5,7 +5,7 @@ import cn.mervyn.luca.framework.pay.core.enums.channel.PayChannelEnum;
 /**
  * 支付客户端的工厂接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface PayClientFactory {
 

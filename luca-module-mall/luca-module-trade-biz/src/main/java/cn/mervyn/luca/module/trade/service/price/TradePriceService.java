@@ -8,7 +8,7 @@ import jakarta.validation.Valid;
 /**
  * 价格计算 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface TradePriceService {
 

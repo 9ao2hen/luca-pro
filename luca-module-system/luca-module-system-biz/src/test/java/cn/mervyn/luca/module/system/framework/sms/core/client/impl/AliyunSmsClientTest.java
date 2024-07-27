@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * {@link AliyunSmsClient} 的单元测试
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class AliyunSmsClientTest extends BaseMockitoUnitTest {
 

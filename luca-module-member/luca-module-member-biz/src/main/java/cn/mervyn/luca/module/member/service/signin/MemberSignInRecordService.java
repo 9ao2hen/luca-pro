@@ -9,7 +9,7 @@ import cn.mervyn.luca.module.member.dal.dataobject.signin.MemberSignInRecordDO;
 /**
  * 签到记录 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface MemberSignInRecordService {
 

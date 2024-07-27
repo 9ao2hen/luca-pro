@@ -21,7 +21,7 @@ import static cn.mervyn.luca.module.mp.enums.ErrorCodeConstants.*;
 /**
  * 公众号统计 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 public class MpStatisticsServiceImpl implements MpStatisticsService {

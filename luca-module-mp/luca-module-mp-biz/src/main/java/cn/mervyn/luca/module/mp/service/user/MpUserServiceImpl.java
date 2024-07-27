@@ -37,7 +37,7 @@ import static cn.mervyn.luca.module.mp.enums.ErrorCodeConstants.USER_UPDATE_TAG_
 /**
  * 微信公众号粉丝 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

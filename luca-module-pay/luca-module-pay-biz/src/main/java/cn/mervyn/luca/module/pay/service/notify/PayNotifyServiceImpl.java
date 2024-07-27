@@ -54,7 +54,7 @@ import static cn.mervyn.luca.module.pay.framework.job.config.PayJobConfiguration
 /**
  * 支付通知 Core Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Valid

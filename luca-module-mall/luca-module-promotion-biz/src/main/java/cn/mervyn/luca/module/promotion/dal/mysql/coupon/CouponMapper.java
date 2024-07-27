@@ -24,7 +24,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * 优惠劵 Mapper
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface CouponMapper extends BaseMapperX<CouponDO> {

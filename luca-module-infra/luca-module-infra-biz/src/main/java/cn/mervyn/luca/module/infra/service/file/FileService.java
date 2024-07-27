@@ -9,7 +9,7 @@ import cn.mervyn.luca.module.infra.dal.dataobject.file.FileDO;
 /**
  * 文件 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface FileService {
 

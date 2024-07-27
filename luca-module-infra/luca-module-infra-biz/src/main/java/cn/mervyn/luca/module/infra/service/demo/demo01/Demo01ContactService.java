@@ -10,7 +10,7 @@ import cn.mervyn.luca.framework.common.pojo.PageResult;
 /**
  * 示例联系人 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface Demo01ContactService {
 

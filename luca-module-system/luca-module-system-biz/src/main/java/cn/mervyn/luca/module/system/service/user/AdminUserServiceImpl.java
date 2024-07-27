@@ -51,7 +51,7 @@ import static cn.mervyn.luca.module.system.enums.LogRecordConstants.*;
 /**
  * 后台用户 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service("adminUserService")
 @Slf4j

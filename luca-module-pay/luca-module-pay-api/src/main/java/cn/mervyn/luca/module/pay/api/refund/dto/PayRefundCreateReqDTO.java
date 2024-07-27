@@ -10,7 +10,7 @@ import jakarta.validation.constraints.NotNull;
 /**
  * 退款单创建 Request DTO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Data
 public class PayRefundCreateReqDTO {

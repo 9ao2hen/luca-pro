@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * 限时折扣活动商品 Response DTO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Data
 public class DiscountProductRespDTO {

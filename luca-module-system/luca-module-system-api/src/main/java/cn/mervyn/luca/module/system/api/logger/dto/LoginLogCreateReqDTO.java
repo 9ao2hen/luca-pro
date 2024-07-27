@@ -10,7 +10,7 @@ import jakarta.validation.constraints.Size;
 /**
  * 登录日志创建 Request DTO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Data
 public class LoginLogCreateReqDTO {

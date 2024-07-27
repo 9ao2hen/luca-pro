@@ -308,10 +308,10 @@ luca:
     express: #快递
       client: kd_niao
       kd-niao:
-        api-key:
-        business-id:
+        api-key: 111
+        business-id: 111
       kd100:
-        key:
-        customer:
+        key: 111
+        customer: 111
 
 debug: false

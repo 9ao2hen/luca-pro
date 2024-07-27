@@ -12,7 +12,7 @@ import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 /**
  * {@link cn.mervyn.luca.framework.datapermission.core.annotation.DataPermission} 注解的 Advisor 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Getter
 @EqualsAndHashCode(callSuper = true)

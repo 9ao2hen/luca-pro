@@ -32,7 +32,7 @@ import static org.mockito.Mockito.verify;
 /**
  * {@link ProductSkuServiceImpl} 的单元测试
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Disabled // TODO 芋艿：后续 fix 补充的单测
 @Import(ProductSkuServiceImpl.class)

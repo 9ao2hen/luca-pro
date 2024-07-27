@@ -11,7 +11,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * 会员用户的 API 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface MemberUserApi {
 

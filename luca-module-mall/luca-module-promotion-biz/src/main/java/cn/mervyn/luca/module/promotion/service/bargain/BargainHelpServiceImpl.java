@@ -27,7 +27,7 @@ import static cn.mervyn.luca.module.promotion.enums.ErrorCodeConstants.*;
 /**
  * 砍价助力 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

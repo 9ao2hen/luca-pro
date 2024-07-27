@@ -22,7 +22,7 @@ import static cn.mervyn.luca.framework.common.util.json.JsonUtils.toJsonString;
  *
  * // TODO 芋艿：未详细测试，因为手头没 App
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class WxAppPayClient extends AbstractWxPayClient {
