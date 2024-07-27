@@ -17,7 +17,7 @@ import static cn.mervyn.luca.module.crm.enums.LogRecordConstants.*;
 /**
  * 合同配置 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

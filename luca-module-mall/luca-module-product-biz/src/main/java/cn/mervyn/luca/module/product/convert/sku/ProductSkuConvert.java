@@ -15,7 +15,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * 商品 SKU Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface ProductSkuConvert {

@@ -20,7 +20,7 @@ import java.util.Optional;
 /**
  * 佣金提现 Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface BrokerageWithdrawConvert {

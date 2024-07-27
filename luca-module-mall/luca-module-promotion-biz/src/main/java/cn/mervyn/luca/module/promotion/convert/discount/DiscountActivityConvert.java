@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * 限时折扣活动 Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface DiscountActivityConvert {

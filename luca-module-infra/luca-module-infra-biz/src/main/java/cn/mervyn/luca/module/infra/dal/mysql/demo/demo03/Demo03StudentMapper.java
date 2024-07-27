@@ -10,7 +10,7 @@ import cn.mervyn.luca.module.infra.controller.admin.demo.demo03.vo.*;
 /**
  * 学生 Mapper
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface Demo03StudentMapper extends BaseMapperX<Demo03StudentDO> {

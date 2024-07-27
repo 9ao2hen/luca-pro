@@ -3,7 +3,7 @@ package cn.mervyn.luca.module.erp.dal.redis;
 /**
  * ERP Redis Key 枚举类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface RedisKeyConstants {
 

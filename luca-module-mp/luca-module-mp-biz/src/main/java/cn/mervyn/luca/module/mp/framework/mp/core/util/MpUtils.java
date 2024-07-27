@@ -10,7 +10,7 @@ import jakarta.validation.Validator;
 /**
  * 公众号工具类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class MpUtils {

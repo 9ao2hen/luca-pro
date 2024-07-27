@@ -14,7 +14,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 产品分类 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface ErpProductCategoryService {
 

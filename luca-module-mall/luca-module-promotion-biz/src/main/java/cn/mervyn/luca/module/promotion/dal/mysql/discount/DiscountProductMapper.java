@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 限时折扣商城 Mapper
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface DiscountProductMapper extends BaseMapperX<DiscountProductDO> {

@@ -5,7 +5,7 @@ import cn.mervyn.luca.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 /**
  * System Redis Key 枚举类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface RedisKeyConstants {
 

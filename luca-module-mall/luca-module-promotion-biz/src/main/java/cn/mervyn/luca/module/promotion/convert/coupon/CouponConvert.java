@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 优惠劵 Convert
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface CouponConvert {

@@ -17,7 +17,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * ERP 销售退货项 Mapper
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Mapper
 public interface ErpSaleReturnItemMapper extends BaseMapperX<ErpSaleReturnItemDO> {

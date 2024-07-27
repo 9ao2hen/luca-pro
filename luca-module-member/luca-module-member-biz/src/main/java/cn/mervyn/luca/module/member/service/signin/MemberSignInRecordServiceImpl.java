@@ -35,7 +35,7 @@ import static cn.mervyn.luca.module.member.enums.ErrorCodeConstants.SIGN_IN_RECO
 /**
  * 签到记录 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

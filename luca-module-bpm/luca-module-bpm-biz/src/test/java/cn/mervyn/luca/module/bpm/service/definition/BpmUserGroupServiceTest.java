@@ -24,7 +24,7 @@ import static cn.mervyn.luca.module.bpm.enums.ErrorCodeConstants.USER_GROUP_NOT_
 /**
  * {@link BpmUserGroupServiceImpl} 的单元测试类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Import(BpmUserGroupServiceImpl.class)
 public class BpmUserGroupServiceTest extends BaseDbUnitTest {

@@ -8,7 +8,7 @@ import cn.mervyn.luca.module.infra.dal.dataobject.job.JobLogDO;
 /**
  * Job 日志 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface JobLogService extends JobLogFrameworkService {
 

@@ -15,7 +15,7 @@ import static cn.mervyn.luca.module.mp.enums.ErrorCodeConstants.ACCOUNT_NOT_EXIS
 /**
  * 公众号账号 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface MpAccountService {
 

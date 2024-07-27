@@ -9,7 +9,7 @@ import lombok.*;
 /**
  * 商品品牌 DO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @TableName("product_brand")
 @Data

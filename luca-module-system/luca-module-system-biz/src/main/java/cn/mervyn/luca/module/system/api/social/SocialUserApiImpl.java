@@ -13,7 +13,7 @@ import jakarta.annotation.Resource;
 /**
  * 社交用户的 API 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

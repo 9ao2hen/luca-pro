@@ -27,7 +27,7 @@ import static cn.mervyn.luca.module.bpm.enums.ErrorCodeConstants.TASK_CREATE_FAI
 /**
  * {@link BpmTaskCandidateStrategy} 的调用者，用于调用对应的策略，实现任务的候选人的计算
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class BpmTaskCandidateInvoker {

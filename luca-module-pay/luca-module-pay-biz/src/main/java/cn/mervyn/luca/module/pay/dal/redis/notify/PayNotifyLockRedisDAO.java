@@ -12,7 +12,7 @@ import static cn.mervyn.luca.module.pay.dal.redis.RedisKeyConstants.PAY_NOTIFY_L
 /**
  * 支付通知的锁 Redis DAO
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Repository
 public class PayNotifyLockRedisDAO {

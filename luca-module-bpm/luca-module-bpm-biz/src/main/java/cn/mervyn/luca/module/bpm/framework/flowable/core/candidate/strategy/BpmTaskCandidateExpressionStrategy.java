@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * 流程表达式 {@link BpmTaskCandidateStrategy} 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Component
 public class BpmTaskCandidateExpressionStrategy implements BpmTaskCandidateStrategy {

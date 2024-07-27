@@ -3,7 +3,7 @@ package cn.mervyn.luca.module.system.service.member;
 /**
  * Member Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface MemberService {
 

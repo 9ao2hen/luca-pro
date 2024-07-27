@@ -11,12 +11,24 @@ import java.util.concurrent.TimeUnit;
 /**
  * 项目启动成功后，提供文档相关的地址
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class BannerApplicationRunner implements ApplicationRunner {
 
     @Override
+    public void run(ApplicationArguments args) throws Exception {
+        ThreadUtil.execute(() -> {
+            ThreadUtil.sleep(1, TimeUnit.SECONDS); // 延迟 1 秒，保证输出到结尾
+            System.out.println("项目启动成功，请访问以下地址：\n"
+                    + "http://localhost:8080/doc.html\n"
+                    + "http://localhost:8080/swagger-ui.html\n"
+                    + "http://localhost:8080/druid/index.html\n");
+
+        });
+    }
+
+    /*@Override
     public void run(ApplicationArguments args) {
         ThreadUtil.execute(() -> {
             ThreadUtil.sleep(1, TimeUnit.SECONDS); // 延迟 1 秒，保证输出到结尾
@@ -54,7 +66,7 @@ public class BannerApplicationRunner implements ApplicationRunner {
                 System.out.println("[AI 大模型 luca-module-ai - 已禁用][参考 https://doc.iocoder.cn/ai/build/ 开启]");
             }
         });
-    }
+    }*/
 
     private static boolean isNotPresent(String className) {
         return !ClassUtils.isPresent(className, ClassUtils.getDefaultClassLoader());

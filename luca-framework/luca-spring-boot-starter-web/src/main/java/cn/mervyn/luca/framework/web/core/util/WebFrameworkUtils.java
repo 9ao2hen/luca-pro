@@ -17,7 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 /**
  * 专属于 web 包的工具类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class WebFrameworkUtils {
 

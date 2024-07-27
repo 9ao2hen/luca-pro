@@ -13,7 +13,7 @@ import java.sql.SQLException;
 /**
  * JDBC 工具类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public class JdbcUtils {
 

@@ -37,7 +37,7 @@ import static cn.mervyn.luca.module.mp.enums.ErrorCodeConstants.*;
 /**
  * 公众号素材 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

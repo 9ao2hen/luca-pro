@@ -24,7 +24,7 @@ import static cn.mervyn.luca.module.trade.service.price.calculator.TradePriceCal
 /**
  * 限时折扣的 {@link TradePriceCalculator} 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Component
 @Order(TradePriceCalculator.ORDER_DISCOUNT_ACTIVITY)

@@ -36,7 +36,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * OAuth2.0 Token Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 public class OAuth2TokenServiceImpl implements OAuth2TokenService {

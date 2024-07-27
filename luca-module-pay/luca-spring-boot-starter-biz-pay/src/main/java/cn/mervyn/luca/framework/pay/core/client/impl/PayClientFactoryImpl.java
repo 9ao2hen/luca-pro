@@ -20,7 +20,7 @@ import static cn.mervyn.luca.framework.pay.core.enums.channel.PayChannelEnum.*;
 /**
  * 支付客户端的工厂实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Slf4j
 public class PayClientFactoryImpl implements PayClientFactory {

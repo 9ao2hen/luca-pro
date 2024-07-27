@@ -25,7 +25,7 @@ import static cn.mervyn.luca.module.infra.enums.ErrorCodeConstants.API_ERROR_LOG
 /**
  * API 错误日志 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

@@ -19,7 +19,7 @@ import static cn.mervyn.luca.framework.common.util.collection.CollectionUtils.co
 /**
  * CRM 联系人 Service 接口
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface CrmContactService {
 

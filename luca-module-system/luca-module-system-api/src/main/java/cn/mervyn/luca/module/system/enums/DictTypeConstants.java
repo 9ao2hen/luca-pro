@@ -3,7 +3,7 @@ package cn.mervyn.luca.module.system.enums;
 /**
  * System 字典类型的枚举类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 public interface DictTypeConstants {
 

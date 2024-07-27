@@ -37,7 +37,7 @@ import static cn.mervyn.luca.module.trade.enums.ErrorCodeConstants.ORDER_NOT_FOU
 /**
  * 交易订单【读】 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 public class TradeOrderQueryServiceImpl implements TradeOrderQueryService {

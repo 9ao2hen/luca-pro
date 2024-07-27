@@ -24,7 +24,7 @@ import static cn.mervyn.luca.module.member.enums.ErrorCodeConstants.*;
 /**
  * 会员标签 Service 实现类
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Service
 @Validated

@@ -14,7 +14,7 @@ import jakarta.annotation.Resource;
 /**
  * WebSocket 示例：单发消息
  *
- * @author 芋道源码
+ * @author 9ao2hen
  */
 @Component
 public class DemoWebSocketMessageListener implements WebSocketMessageListener<DemoSendMessage> {
