@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 /**
- * 芋道 AI 自动配置
+ * 墨文 AI 自动配置
  *
  * @author fansili
  */

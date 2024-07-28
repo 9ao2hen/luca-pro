@@ -23,11 +23,11 @@
         <module>luca-module-mp</module>
         <module>luca-module-crm</module>
         <module>luca-module-erp</module>
-        <module>luca-module-ai</module>
+<!--        <module>luca-module-ai</module>-->
     </modules>
 
     <name>${project.artifactId}</name>
-    <description>芋道项目基础脚手架</description>
+    <description>墨文项目基础脚手架</description>
     <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
 
     <properties>

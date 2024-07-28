@@ -2,9 +2,14 @@ server:
   port: 48080
 
 --- #################### 数据库相关配置 ####################
-
 spring:
   # 数据源配置项
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.quartz.QuartzAutoConfiguration # 默认 local 环境，不开启 Quartz 的自动配置
+      - de.codecentric.boot.admin.server.config.AdminServerAutoConfiguration # 禁用 Spring Boot Admin 的 Server 的自动配置
+      - de.codecentric.boot.admin.server.ui.config.AdminServerUiAutoConfiguration # 禁用 Spring Boot Admin 的 Server UI 的自动配置
+      - de.codecentric.boot.admin.client.config.SpringBootAdminClientAutoConfiguration # 禁用 Spring Boot Admin 的 Client 的自动配置
   datasource:
     druid: # Druid 【监控】相关的全局配置
       web-stat-filter:
@@ -26,26 +31,26 @@ spring:
             multi-statement-allow: true
     dynamic: # 多数据源配置
       druid: # Druid 【连接池】相关的全局配置
-        initial-size: 5 # 初始连接数
-        min-idle: 10 # 最小连接池数量
+        initial-size: 1 # 初始连接数
+        min-idle: 1 # 最小连接池数量
         max-active: 20 # 最大连接池数量
         max-wait: 600000 # 配置获取连接等待超时的时间，单位：毫秒
         time-between-eviction-runs-millis: 60000 # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位：毫秒
         min-evictable-idle-time-millis: 300000 # 配置一个连接在池中最小生存的时间，单位：毫秒
         max-evictable-idle-time-millis: 900000 # 配置一个连接在池中最大生存的时间，单位：毫秒
-        validation-query: SELECT 1 # 配置检测连接是否有效
+        validation-query: SELECT 1 FROM DUAL # 配置检测连接是否有效
         test-while-idle: true
         test-on-borrow: false
         test-on-return: false
       primary: master
       datasource:
         master:
-          url: jdbc:mysql://101.43.70.16:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          url: jdbc:mysql://127.0.0.1:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
           username: root
           password: Mervyn@1160
-        slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
+        slave: # 模拟从库，可根据自己需要修改
           lazy: true # 开启懒加载，保证启动速度
-          url: jdbc:mysql://101.43.70.16:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+          url: jdbc:mysql://127.0.0.1:3306/luca-pro?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
           username: root
           password: Mervyn@1160
 
@@ -54,7 +59,7 @@ spring:
     redis:
       host: 39.107.226.148 # 地址
       port: 6379 # 端口
-      database: 1 # 数据库索引
+      database: 0 # 数据库索引
       password: redis_123 # 密码，建议生产环境开启
 
 --- #################### 定时任务相关配置 ####################
@@ -62,7 +67,7 @@ spring:
 # Quartz 配置项，对应 QuartzProperties 配置类
 spring:
   quartz:
-    auto-startup: false # 测试环境，需要开启 Job
+    auto-startup: false # 本地开发环境，尽量不要开启 Job
     scheduler-name: schedulerName # Scheduler 名字。默认为 schedulerName
     job-store-type: jdbc # Job 存储器类型。默认为 memory 表示内存，可选 jdbc 使用数据库。
     wait-for-jobs-to-complete-on-shutdown: true # 应用关闭时，是否等待定时任务执行完成。默认为 false ，建议设置为 true
@@ -99,8 +104,8 @@ spring:
   rabbitmq:
     host: 127.0.0.1 # RabbitMQ 服务的地址
     port: 5672 # RabbitMQ 服务的端口
-    username: guest # RabbitMQ 服务的账号
-    password: guest # RabbitMQ 服务的密码
+    username: rabbit # RabbitMQ 服务的账号
+    password: rabbit # RabbitMQ 服务的密码
   # Kafka 配置项，对应 KafkaProperties 配置类
   kafka:
     bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
@@ -138,11 +143,31 @@ spring:
 logging:
   file:
     name: ./logs/${spring.application.name}.log # 日志文件名，全路径
+  level:
+    # 配置自己写的 MyBatis Mapper 打印日志
+    cn.mervyn.luca.module.bpm.dal.mysql: debug
+    cn.mervyn.luca.module.infra.dal.mysql: debug
+    cn.mervyn.luca.module.infra.dal.mysql.logger.ApiErrorLogMapper: INFO # 配置 ApiErrorLogMapper 的日志级别为 info，避免和 GlobalExceptionHandler 重复打印
+    cn.mervyn.luca.module.infra.dal.mysql.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
+    cn.mervyn.luca.module.infra.dal.mysql.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
+    cn.mervyn.luca.module.pay.dal.mysql: debug
+    cn.mervyn.luca.module.pay.dal.mysql.notify.PayNotifyTaskMapper: INFO # 配置 PayNotifyTaskMapper 的日志级别为 info
+    cn.mervyn.luca.module.system.dal.mysql: debug
+    cn.mervyn.luca.module.system.dal.mysql.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
+    cn.mervyn.luca.module.tool.dal.mysql: debug
+    cn.mervyn.luca.module.member.dal.mysql: debug
+    cn.mervyn.luca.module.trade.dal.mysql: debug
+    cn.mervyn.luca.module.promotion.dal.mysql: debug
+    cn.mervyn.luca.module.statistics.dal.mysql: debug
+    cn.mervyn.luca.module.crm.dal.mysql: debug
+    cn.mervyn.luca.module.erp.dal.mysql: debug
+    org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR # TODO 芋艿：先禁用，Spring Boot 3.X 存在部分错误的 WARN 提示
 
---- #################### 微信公众号相关配置 ####################
-wx: # 参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
-  mp:
-    # 公众号配置(必填)
+debug: false
+
+--- #################### 微信公众号、小程序相关配置 ####################
+wx:
+  mp: # 公众号配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
     app-id: wxb2c5324e53ac454b
     secret: 3d7903f10c5a177220b3a1eaa7d513cf
     # 存储配置，解决 AccessToken 的跨节点的共享
@@ -163,12 +188,18 @@ wx: # 参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-sta
 # 墨文配置项，设置当前项目所有自定义的配置
 luca:
   captcha:
-    enable: false # 本地环境，暂时关闭图片验证码，方便登录等接口的测试；
+    enable: true # 本地环境，暂时关闭图片验证码，方便登录等接口的测试；
+  security:
+    mock-enable: true
   pay:
     order-notify-url: http://www.mervyn.cn/admin-api/pay/notify/order # 支付渠道的【支付】回调地址
     refund-notify-url: http://www.mervyn.cn/admin-api/pay/notify/refund # 支付渠道的【退款】回调地址
-  demo: false # 开启演示模式
-  tencent-lbs-key:  # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
+  access-log: # 访问日志的配置项
+    enable: false
+  demo: false # 关闭演示模式
+  wxa-code:
+    env-version: develop # 小程序版本: 正式版为 "release"；体验版为 "trial"；开发版为 "develop"
+  tencent-lbs-key: dddd # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
 
 justauth:
   enabled: true
@@ -196,3 +227,4 @@ justauth:
     type: REDIS
     prefix: 'social_auth_state:' # 缓存前缀，目前只对 Redis 缓存生效，默认 JUSTAUTH::STATE::
     timeout: 24h # 超时时长，目前只对 Redis 缓存生效，默认 3 分钟
+
