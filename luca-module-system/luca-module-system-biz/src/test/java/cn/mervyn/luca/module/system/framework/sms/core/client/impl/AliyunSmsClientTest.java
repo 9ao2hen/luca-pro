@@ -39,7 +39,7 @@ public class AliyunSmsClientTest extends BaseMockitoUnitTest {
     private final SmsChannelProperties properties = new SmsChannelProperties()
             .setApiKey(randomString()) // 随机一个 apiKey，避免构建报错
             .setApiSecret(randomString()) // 随机一个 apiSecret，避免构建报错
-            .setSignature("芋道源码");
+            .setSignature("墨文源码");
 
     @InjectMocks
     private final AliyunSmsClient smsClient = new AliyunSmsClient(properties);

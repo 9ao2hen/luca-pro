@@ -107,7 +107,7 @@ public class ProductBrandServiceImplTest extends BaseDbUnitTest {
     public void testGetBrandPage() {
        // mock 数据
        ProductBrandDO dbBrand = randomPojo(ProductBrandDO.class, o -> { // 等会查询到
-           o.setName("芋道源码");
+           o.setName("墨文源码");
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setCreateTime(buildTime(2022, 2, 1));
        });
@@ -120,7 +120,7 @@ public class ProductBrandServiceImplTest extends BaseDbUnitTest {
        brandMapper.insert(cloneIgnoreId(dbBrand, o -> o.setCreateTime(buildTime(2022, 3, 1))));
        // 准备参数
        ProductBrandPageReqVO reqVO = new ProductBrandPageReqVO();
-       reqVO.setName("芋道");
+       reqVO.setName("墨文");
        reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
        reqVO.setCreateTime((new LocalDateTime[]{buildTime(2022, 1, 1), buildTime(2022, 2, 25)}));
 
