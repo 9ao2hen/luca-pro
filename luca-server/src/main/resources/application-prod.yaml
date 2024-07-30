@@ -168,7 +168,7 @@ debug: false
 --- #################### 微信公众号、小程序相关配置 ####################
 wx:
   mp: # 公众号配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
-    app-id: wxb2c5324e53ac454b
+    app-id: wx77091e856094fccb
     secret: 3d7903f10c5a177220b3a1eaa7d513cf
     # 存储配置，解决 AccessToken 的跨节点的共享
     config-storage:
@@ -176,7 +176,7 @@ wx:
       key-prefix: wx # Redis Key 的前缀
       http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
   miniapp: # 小程序配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/README.md 文档
-    appid: wx2c60e65ffc6d963f
+    appid: wx77091e856094fccb
     secret: 267a421fbe024af37e2b47344348e8db
     config-storage:
       type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
